@@ -1,11 +1,11 @@
 import React from 'react'
 import { Switch, Route } from 'react-router-dom'
 
-import LandingPage from './LandingPage'
-import AboutMe from './AboutMe'
-import Contact from './Contact'
-import Proyect from './Proyect'
-import Resume from './Resume'
+import LandingPage from '../pages/LandingPage'
+import AboutMe from '../pages/AboutMe'
+import Contact from '../pages/Contact'
+import Project from '../pages/Project'
+import Resume from '../pages/Resume'
 
 const Main = () => {
     return(
@@ -13,7 +13,7 @@ const Main = () => {
             <Route exact path='/' component={LandingPage} />
             <Route path='/aboutme' component={AboutMe} />
             <Route path='/contact' component={Contact} />
-            <Route path='/proyect' component={Proyect} />
+            <Route path='/project' component={Project} />
             <Route path='/resume' component={Resume} />
         </Switch>
     )
