@@ -3,7 +3,7 @@ import { Card, CardTitle, CardText, CardActions, Button, CardMenu, IconButton} f
 
 const CardProject = ({ url, number, name }) => {
     return (
-        <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
+        <Card shadow={5} l={4} m={6} s={12} style={{minWidth: '450', margin: 'auto'}}>
             <CardTitle style={{color: '#fff', height: '176px', background: `url(${url}) center / cover`}}>{name}: {number}</CardTitle>
             <CardText>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
