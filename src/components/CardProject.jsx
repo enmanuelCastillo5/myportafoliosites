@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, CardTitle, CardText, CardActions, Button, CardMenu, IconButton} from 'react-mdl'
+import { Card, CardTitle, CardText, CardActions, Button, CardMenu, Icon } from 'react-mdl'
 
 const CardProject = ({ url, number, name }) => {
     return (
@@ -11,11 +11,11 @@ const CardProject = ({ url, number, name }) => {
             </CardText>
             <CardActions border>
                 <Button colored>github
-                    <IconButton name="cloud_done" />
+                    <Icon name="cloud_done" />
                 </Button>
             </CardActions>
             <CardMenu style={{color: '#fff'}}>
-                <IconButton name="share" />
+                <Icon name="share" />
             </CardMenu>
         </Card>
     )

@@ -3,18 +3,16 @@ import { Grid, Cell, List, ListItem, ListItemContent } from 'react-mdl'
 
 const Contact = () => {
     return(
-        <div className="container">
-            <div className="row">
        <div className="contact-body">
-           <Grid className='contact-grid row'>
-                <Cell col={6} className='m6 s12'>
+           <Grid className='contact-grid'>
+                <Cell col={6}>
                     <h2> Enmanuel Castillo</h2>
                     <img src="https://thumbs.dreamstime.com/z/icono-del-perfil-avatar-defecto-placeholder-gris-de-la-foto-102846161.jpg" alt="Avatar de perfil" style={{height: '250px'}}/>
                     <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim, maxime? Maxime earum eveniet magni aspernatur voluptate dolore sit, saepe deserunt accusamus fugiat nihil aperiam consectetur. Rem dicta iusto exercitationem at.
                     Voluptas eligendi sit quisquam molestias corrupti rerum ullam odit ex eaque?</p>
                 </Cell>
 
-                <Cell col={6} className='m6 s12'>
+                <Cell col={6}>
                     <h2>Contact Me</h2>
                     <hr/>
                     <div className='contact-list'>
@@ -43,8 +41,6 @@ const Contact = () => {
                     </div>
                 </Cell>
            </Grid>
-       </div>
-       </div>
        </div>
     )
 }

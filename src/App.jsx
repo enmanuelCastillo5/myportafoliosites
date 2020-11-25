@@ -8,18 +8,17 @@ const App = () => {
   return (
     <div className="demo-big-content">
     <Layout>
-        <Header className="header-color" title="Enmanuel Castillo" scroll>
+  <Header className="header-color" title={<Link style={{textDecoration: 'none', color: 'white'}} to='/'>Enmanuel Castillo</Link>} scroll>
             <Navigation>
                 <Link to="/resume">Resume</Link>
-                <Link to="/aboutme">About Me</Link>
                 <Link to="/project">Proyect</Link>
                 <Link to="/contact">Contact</Link>
             </Navigation>
         </Header>
         <Drawer title="Menu">
             <Navigation>
+                <Link to="/">Enmanuel Castillo</Link>
                 <Link to="/resume">Resume</Link>
-                <Link to="/aboutme">About Me</Link>
                 <Link to="/project">Proyect</Link>
                 <Link to="/contact">Contact</Link>
             </Navigation>
