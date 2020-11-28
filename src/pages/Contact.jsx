@@ -1,6 +1,13 @@
 import React from 'react'
 import { Grid, Cell, List, ListItem, ListItemContent } from 'react-mdl'
 
+
+const styles = {
+    listItem: {
+         fontSize: '25px',
+         fontFamily: 'Anton'
+        }
+}
 const Contact = () => {
     return(
        <div className="contact-body">
@@ -19,21 +26,21 @@ const Contact = () => {
                         <List>
 
                             <ListItem>
-                                <ListItemContent style={{ fontSize: '25px', fontFamily: 'Anton'}} icon='call'>
+                                <ListItemContent style={styles.listItem} icon='call'>
                                    (809)-705-9525
                                 </ListItemContent>
                             </ListItem>
 
 
                             <ListItem>
-                                   <ListItemContent style={{ fontSize: '25px', fontFamily: 'Anton'}} icon='email'>
+                                   <ListItemContent style={styles.listItem} icon='email'>
                                        enmanuel.castillo@hotmail.com
                                     </ListItemContent>
                             </ListItem>
 
 
                             <ListItem>
-                                <ListItemContent style={{ fontSize: '25px', fontFamily: 'Anton'}} icon='mail_outline'>
+                                <ListItemContent style={styles.listItem} icon='mail_outline'>
                                   nmnlcstll@gmail.com
                                 </ListItemContent>
                             </ListItem>

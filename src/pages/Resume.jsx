@@ -4,24 +4,36 @@ import Education from '../components/educations'
 import Experience from '../components/experience'
 import Skills from '../components/Skills'
 
+const styles = {
+    center: {
+        textAlign: 'center'
+    },
+    imgHeight: {
+        height: '200px'
+    },
+    h2: {paddingTop: '2em'},
+    h4: {color: 'grey'},
+    hr: {borderTop: '3px solid #833fb2', width: '100%' },
 
+
+}
 const Resume = () => {
     return(
             <div>
                 <Grid>
                     <Cell col={4}>
-                        <div className="" style={{textAlign: 'center'}}>
+                        <div style={styles.center}>
                             <img
                                 src="https://i.pinimg.com/474x/83/a9/a1/83a9a144ab03763667b8d8aa381bb441.jpg"
                                 alt="Avatar"
-                                style={{height: '200px'}}/>
+                                style={styles.imgHeight}/>
                         </div>
-                        <h2 style={{paddingTop: '2em'}}>Enmanuel Castillo</h2>
-                        <h4 style={{color: 'grey'}}>Programmer</h4>
-                        <hr style={{borderTop: '3px solid #833fb2', width: '50%' }}/>
+                        <h2 style={styles.h2}>Enmanuel Castillo</h2>
+                        <h4 style={styles.h4}>Programmer</h4>
+                        <hr style={styles.hr}/>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem, dicta quasi! Vero aut unde consectetur aperiam quis qui blanditiis cumque ullam aliquam modi aliquid, eius est eaque ipsum ipsam quos.
                         Provident, temporibus debitis odit voluptatem laudantium iusto dolores a quos architecto</p>
-                        <hr style={{borderTop: '3px solid #833fb2', width: '50%' }}/>
+                        <hr style={styles.hr}/>
                         <h5>Address</h5>
                         <p>calle las cañadas #83, las colinas</p>
                         <h5>Phone</h5>
@@ -30,7 +42,7 @@ const Resume = () => {
                         <p>example@mail.com</p>
                         <h5>Web</h5>
                         <p>mySite.com</p>
-                        <hr style={{borderTop: '3px solid #833fb2', width: '50%' }}/>
+                        <hr style={styles.hr}/>
                     </Cell>
                     <Cell className='resume-right-col' col={8}>
 
@@ -47,7 +59,7 @@ const Resume = () => {
                             schoolName='my 2nd University'
                             schooldescription='Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.'
                          />
-                         <hr style={{borderTop: '3px solid #e22947'}}/>
+                         <hr style={styles.hr}/>
 
                          <h2>Experience</h2>
                          <Experience
@@ -63,25 +75,25 @@ const Resume = () => {
                             jobName='empresa'
                             jobDescription='worker' />
 
-                        <hr style={{borderTop: '3px solid #e22947'}}/>
+                        <hr style={styles.hr}/>
 
                         <Skills
                             skill='javascript'
-                            progress={60} />
+                            progress={50} />
 
                         <Skills
                             skill='React Js'
-                            progress={50} />
+                            progress={40} />
 
 
                         <Skills
                             skill='Ruby On Rails'
-                            progress={30} />
+                            progress={10} />
 
 
                         <Skills
                             skill='nodeJs'
-                            progress={40} />
+                            progress={20} />
 
 
 
